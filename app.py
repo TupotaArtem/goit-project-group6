@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 st.title("Прогноз відтоку клієнтів телеком-компанії")
 
-with open("models/best_model_xgboost.pkl", "rb") as f:
+with open("models/random_forest_pipeline_smoothed.pkl", "rb") as f:
     model = pickle.load(f)
 
 features = [
